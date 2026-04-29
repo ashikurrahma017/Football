@@ -1,27 +1,37 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
     <meta charset="UTF-8">
+
+    <!-- IMPORTANT: Mobile fullscreen -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
     <title>Football Flick Game</title>
 
-    <!-- IMPORTANT: Socket.io from your server -->
-    <script src="/socket.io/socket.io.js"></script>
-
-    <!-- IMPORTANT: Phaser CDN -->
-    <script src="https://cdn.jsdelivr.net/npm/phaser@3.70.0/dist/phaser.js"></script>
-
-    <!-- Remove default margin (important for canvas display) -->
+    <!-- Remove all margins -->
     <style>
-        body {
+        html, body {
             margin: 0;
             padding: 0;
+            overflow: hidden;
             background: black;
         }
+
+        canvas {
+            display: block;
+        }
     </style>
+
+    <!-- Socket.IO (from your server) -->
+    <script src="/socket.io/socket.io.js"></script>
+
+    <!-- Phaser (game engine) -->
+    <script src="https://cdn.jsdelivr.net/npm/phaser@3.70.0/dist/phaser.js"></script>
 </head>
+
 <body>
 
-<!-- Your game file -->
+<!-- Game Script -->
 <script src="game.js"></script>
 
 </body>
