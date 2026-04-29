@@ -1,11 +1,28 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Football Flick</title>
-  <script src="https://cdn.socket.io/4.5.4/socket.io.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/phaser@3/dist/phaser.js"></script>
+    <meta charset="UTF-8">
+    <title>Football Flick Game</title>
+
+    <!-- IMPORTANT: Socket.io from your server -->
+    <script src="/socket.io/socket.io.js"></script>
+
+    <!-- IMPORTANT: Phaser CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/phaser@3.70.0/dist/phaser.js"></script>
+
+    <!-- Remove default margin (important for canvas display) -->
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background: black;
+        }
+    </style>
 </head>
 <body>
+
+<!-- Your game file -->
 <script src="game.js"></script>
+
 </body>
 </html>
